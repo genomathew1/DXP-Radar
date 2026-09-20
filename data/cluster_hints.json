@@ -1,0 +1,17 @@
+{
+  "https://competitor-a.example.com/docs/mcp-server-launch": "mcp_server_launch",
+  "https://analyst.example.com/notes/dxp-mcp-2026-09": "mcp_server_launch",
+
+  "https://competitor-b.example.com/pricing/headless-update": "headless_pricing_change",
+  "https://analyst.example.com/notes/headless-pricing-2026-09": "headless_pricing_change",
+
+  "https://competitor-c.example.com/release-notes/2026-09": "byo_template_gallery",
+
+  "https://competitor-d.example.com/blog/cdn-benchmark": "cdn_latency_benchmark",
+
+  "https://registry.example.com/entries/legacy-cms-connector": "legacy_registry_listing",
+
+  "https://competitor-e.example.com/docs/headless-cms-ga": "headless_cms_ga",
+  "https://analyst.example.com/notes/headless-cms-ga-2026-09": "headless_cms_ga",
+  "https://forum.example.com/threads/competitor-e-ga-reactions": "headless_cms_ga"
+}

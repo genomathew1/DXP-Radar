@@ -1,0 +1,9 @@
+# Core prototype has zero third-party dependencies -- it runs on the
+# Python 3.10+ standard library alone.
+#
+# Uncomment to enable the real Claude backend (dxp_radar/llm.py) instead
+# of the deterministic MockLLM used by default:
+# anthropic>=0.40.0
+#
+# Optional, for a nicer test runner:
+# pytest>=8.0.0

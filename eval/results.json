@@ -1,0 +1,48 @@
+{
+  "clusters_evaluated": 6,
+  "correctness": 1.0,
+  "escalation_rate": 0.5,
+  "fallback_rate": 0.167,
+  "groundedness": 1.0,
+  "revision_rate": 1.0,
+  "safety_catch_rate": 1.0,
+  "total_latency_ms": 0.599,
+  "per_cluster": [
+    {
+      "cluster_id": "mcp_server_launch",
+      "status": "auto_published",
+      "escalation_reason": null,
+      "matches_golden_label": true
+    },
+    {
+      "cluster_id": "headless_pricing_change",
+      "status": "escalated",
+      "escalation_reason": "policy_sensitive_dimension",
+      "matches_golden_label": true
+    },
+    {
+      "cluster_id": "byo_template_gallery",
+      "status": "escalated",
+      "escalation_reason": "low_confidence",
+      "matches_golden_label": true
+    },
+    {
+      "cluster_id": "cdn_latency_benchmark",
+      "status": "escalated",
+      "escalation_reason": "input_check_flag",
+      "matches_golden_label": true
+    },
+    {
+      "cluster_id": "legacy_registry_listing",
+      "status": "insufficient_evidence",
+      "escalation_reason": null,
+      "matches_golden_label": true
+    },
+    {
+      "cluster_id": "headless_cms_ga",
+      "status": "auto_published",
+      "escalation_reason": null,
+      "matches_golden_label": true
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "_comment": "Hand-labeled expected outcome per cluster, written by inspecting the mock dataset before running the pipeline. Used by evaluate.py as a small correctness/regression check -- not a claim of ground truth about real competitors.",
+  "mcp_server_launch": {
+    "expected_status": "auto_published",
+    "expected_implication": "parity"
+  },
+  "headless_pricing_change": {
+    "expected_status": "escalated",
+    "expected_reason": "policy_sensitive_dimension"
+  },
+  "byo_template_gallery": {
+    "expected_status": "escalated",
+    "expected_reason": "low_confidence"
+  },
+  "cdn_latency_benchmark": {
+    "expected_status": "escalated",
+    "expected_reason": "input_check_flag"
+  },
+  "legacy_registry_listing": {
+    "expected_status": "insufficient_evidence"
+  },
+  "headless_cms_ga": {
+    "expected_status": "auto_published",
+    "expected_implication": "threat"
+  }
+}

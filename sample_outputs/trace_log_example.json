@@ -1,0 +1,301 @@
+{
+  "brief_sections": [
+    {
+      "cluster_id": "mcp_server_launch",
+      "headline": "Competitor A launches a general-availability MCP server for its DXP \u2014 PARITY",
+      "body": "Based on the cited evidence, 'Competitor A launches a general-availability MCP server for its DXP' represents a parity signal for the developer_platform capability, per Competitor A Docs, Forrester Analyst Note. (critic score 9.1/10). Recommended action: Log as parity; monitor for follow-on signals.",
+      "citations": [
+        "[Competitor A Docs](https://competitor-a.example.com/docs/mcp-server-launch)",
+        "[Forrester Analyst Note](https://analyst.example.com/notes/dxp-mcp-2026-09)"
+      ],
+      "status": "auto_published",
+      "escalation_reason": null
+    },
+    {
+      "cluster_id": "headless_pricing_change",
+      "headline": "Competitor B restructures headless CMS pricing around API call volume \u2014 NEEDS PM REVIEW",
+      "body": "Top candidate: threat (score 8.58/10). Escalated for PM review: policy_sensitive_dimension.",
+      "citations": [
+        "[Competitor B Pricing Page](https://competitor-b.example.com/pricing/headless-update)",
+        "[Gartner Peer Insights](https://analyst.example.com/notes/headless-pricing-2026-09)"
+      ],
+      "status": "escalated",
+      "escalation_reason": "policy_sensitive_dimension"
+    },
+    {
+      "cluster_id": "byo_template_gallery",
+      "headline": "Competitor C adds a drag-and-drop \"build your own\" template gallery \u2014 NEEDS PM REVIEW",
+      "body": "Top candidate: parity (score 6.4/10). Escalated for PM review: low_confidence.",
+      "citations": [
+        "[Competitor C Release Notes](https://competitor-c.example.com/release-notes/2026-09)"
+      ],
+      "status": "escalated",
+      "escalation_reason": "low_confidence"
+    },
+    {
+      "cluster_id": "cdn_latency_benchmark",
+      "headline": "Competitor D publishes a CDN latency benchmark \u2014 NEEDS PM REVIEW",
+      "body": "Top candidate: parity (score 6.85/10). Escalated for PM review: input_check_flag.",
+      "citations": [
+        "[Competitor D Blog](https://competitor-d.example.com/blog/cdn-benchmark)"
+      ],
+      "status": "escalated",
+      "escalation_reason": "input_check_flag"
+    },
+    {
+      "cluster_id": "legacy_registry_listing",
+      "headline": "A legacy CMS connector was listed in the open MCP registry \u2014 INSUFFICIENT EVIDENCE",
+      "body": "No candidate interpretation passed the hard evidence gates after one revision.",
+      "citations": [
+        "[Open MCP Registry](https://registry.example.com/entries/legacy-cms-connector)"
+      ],
+      "status": "insufficient_evidence",
+      "escalation_reason": null
+    },
+    {
+      "cluster_id": "headless_cms_ga",
+      "headline": "Competitor E takes its AI-assisted headless CMS to general availability \u2014 THREAT",
+      "body": "Based on the cited evidence, 'Competitor E takes its AI-assisted headless CMS to general availability' represents a threat signal for the headless_cms capability, per Competitor E Docs, Developer Forum Thread, IDC Market Note. (critic score 9.33/10). Recommended action: Flag for stack-rank review this cycle.",
+      "citations": [
+        "[Competitor E Docs](https://competitor-e.example.com/docs/headless-cms-ga)",
+        "[IDC Market Note](https://analyst.example.com/notes/headless-cms-ga-2026-09)",
+        "[Developer Forum Thread](https://forum.example.com/threads/competitor-e-ga-reactions)"
+      ],
+      "status": "auto_published",
+      "escalation_reason": null
+    }
+  ],
+  "trace": [
+    {
+      "agent": "Scout",
+      "action": "fetch",
+      "cluster_id": null,
+      "detail": "10 raw item(s)",
+      "elapsed_ms": 0.064
+    },
+    {
+      "agent": "InputCheck",
+      "action": "flag",
+      "cluster_id": null,
+      "detail": "https://competitor-d.example.com/blog/cdn-benchmark: ['ignore previous instructions']",
+      "elapsed_ms": 0.0
+    },
+    {
+      "agent": "Analyst",
+      "action": "cluster",
+      "cluster_id": null,
+      "detail": "6 cluster(s)",
+      "elapsed_ms": 0.041
+    },
+    {
+      "agent": "Strategist",
+      "action": "propose",
+      "cluster_id": "mcp_server_launch",
+      "detail": "3 candidate(s)",
+      "elapsed_ms": 0.06
+    },
+    {
+      "agent": "Critic",
+      "action": "score",
+      "cluster_id": "mcp_server_launch",
+      "detail": "top=parity:8.5 gates_passed=False",
+      "elapsed_ms": 0.08
+    },
+    {
+      "agent": "Strategist",
+      "action": "revise",
+      "cluster_id": "mcp_server_launch",
+      "detail": "retry 1",
+      "elapsed_ms": 0.013
+    },
+    {
+      "agent": "Critic",
+      "action": "re-score",
+      "cluster_id": "mcp_server_launch",
+      "detail": "top=parity:9.1 gates_passed=True",
+      "elapsed_ms": 0.034
+    },
+    {
+      "agent": "Writer",
+      "action": "write",
+      "cluster_id": "mcp_server_launch",
+      "detail": "auto-published",
+      "elapsed_ms": 0.006
+    },
+    {
+      "agent": "Strategist",
+      "action": "propose",
+      "cluster_id": "headless_pricing_change",
+      "detail": "3 candidate(s)",
+      "elapsed_ms": 0.014
+    },
+    {
+      "agent": "Critic",
+      "action": "score",
+      "cluster_id": "headless_pricing_change",
+      "detail": "top=threat:7.98 gates_passed=False",
+      "elapsed_ms": 0.042
+    },
+    {
+      "agent": "Strategist",
+      "action": "revise",
+      "cluster_id": "headless_pricing_change",
+      "detail": "retry 1",
+      "elapsed_ms": 0.009
+    },
+    {
+      "agent": "Critic",
+      "action": "re-score",
+      "cluster_id": "headless_pricing_change",
+      "detail": "top=threat:8.58 gates_passed=True",
+      "elapsed_ms": 0.03
+    },
+    {
+      "agent": "Writer",
+      "action": "write_escalation",
+      "cluster_id": "headless_pricing_change",
+      "detail": "policy_sensitive_dimension",
+      "elapsed_ms": 0.004
+    },
+    {
+      "agent": "Strategist",
+      "action": "propose",
+      "cluster_id": "byo_template_gallery",
+      "detail": "1 candidate(s)",
+      "elapsed_ms": 0.006
+    },
+    {
+      "agent": "Critic",
+      "action": "score",
+      "cluster_id": "byo_template_gallery",
+      "detail": "top=parity:5.8 gates_passed=False",
+      "elapsed_ms": 0.013
+    },
+    {
+      "agent": "Strategist",
+      "action": "revise",
+      "cluster_id": "byo_template_gallery",
+      "detail": "retry 1",
+      "elapsed_ms": 0.005
+    },
+    {
+      "agent": "Critic",
+      "action": "re-score",
+      "cluster_id": "byo_template_gallery",
+      "detail": "top=parity:6.4 gates_passed=True",
+      "elapsed_ms": 0.011
+    },
+    {
+      "agent": "Writer",
+      "action": "write_escalation",
+      "cluster_id": "byo_template_gallery",
+      "detail": "low_confidence",
+      "elapsed_ms": 0.003
+    },
+    {
+      "agent": "Strategist",
+      "action": "propose",
+      "cluster_id": "cdn_latency_benchmark",
+      "detail": "1 candidate(s)",
+      "elapsed_ms": 0.005
+    },
+    {
+      "agent": "Critic",
+      "action": "score",
+      "cluster_id": "cdn_latency_benchmark",
+      "detail": "top=parity:6.25 gates_passed=False",
+      "elapsed_ms": 0.013
+    },
+    {
+      "agent": "Strategist",
+      "action": "revise",
+      "cluster_id": "cdn_latency_benchmark",
+      "detail": "retry 1",
+      "elapsed_ms": 0.006
+    },
+    {
+      "agent": "Critic",
+      "action": "re-score",
+      "cluster_id": "cdn_latency_benchmark",
+      "detail": "top=parity:6.85 gates_passed=True",
+      "elapsed_ms": 0.011
+    },
+    {
+      "agent": "Writer",
+      "action": "write_escalation",
+      "cluster_id": "cdn_latency_benchmark",
+      "detail": "input_check_flag",
+      "elapsed_ms": 0.003
+    },
+    {
+      "agent": "Strategist",
+      "action": "propose",
+      "cluster_id": "legacy_registry_listing",
+      "detail": "1 candidate(s)",
+      "elapsed_ms": 0.005
+    },
+    {
+      "agent": "Critic",
+      "action": "score",
+      "cluster_id": "legacy_registry_listing",
+      "detail": "top=parity:5.8 gates_passed=False",
+      "elapsed_ms": 0.012
+    },
+    {
+      "agent": "Strategist",
+      "action": "revise",
+      "cluster_id": "legacy_registry_listing",
+      "detail": "retry 1",
+      "elapsed_ms": 0.005
+    },
+    {
+      "agent": "Critic",
+      "action": "re-score",
+      "cluster_id": "legacy_registry_listing",
+      "detail": "top=parity:6.4 gates_passed=False",
+      "elapsed_ms": 0.011
+    },
+    {
+      "agent": "Writer",
+      "action": "write_insufficient_evidence",
+      "cluster_id": "legacy_registry_listing",
+      "detail": "flagged for PM",
+      "elapsed_ms": 0.002
+    },
+    {
+      "agent": "Strategist",
+      "action": "propose",
+      "cluster_id": "headless_cms_ga",
+      "detail": "3 candidate(s)",
+      "elapsed_ms": 0.01
+    },
+    {
+      "agent": "Critic",
+      "action": "score",
+      "cluster_id": "headless_cms_ga",
+      "detail": "top=threat:8.72 gates_passed=False",
+      "elapsed_ms": 0.029
+    },
+    {
+      "agent": "Strategist",
+      "action": "revise",
+      "cluster_id": "headless_cms_ga",
+      "detail": "retry 1",
+      "elapsed_ms": 0.009
+    },
+    {
+      "agent": "Critic",
+      "action": "re-score",
+      "cluster_id": "headless_cms_ga",
+      "detail": "top=threat:9.33 gates_passed=True",
+      "elapsed_ms": 0.029
+    },
+    {
+      "agent": "Writer",
+      "action": "write",
+      "cluster_id": "headless_cms_ga",
+      "detail": "auto-published",
+      "elapsed_ms": 0.003
+    }
+  ]
+}
